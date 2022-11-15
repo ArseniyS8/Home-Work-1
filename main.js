@@ -169,6 +169,11 @@ fetch('https://imdb-api.com/en/API/Top250Movies/k_q0cb7kv2')
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
+//request promis with a return to the console.
+fetch('https://imdb-api.com/en/API/Top250Movies/k_q0cb7kv2')
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 
 
 
