@@ -115,14 +115,14 @@ const person = {
     gadgets: ["Realme 6 PRO", "Acer Nitro 5", "Realme Buds 2", "Canyon Gaming"],
     gadgets2: [
         {
-        name: "Phone",
-        mark: "realme",
-        model: "6 pro"
-    }, {
-        name: "laptop",
-        mark: "acer",
-        model: "5 nitro",
-    }
+            name: "Phone",
+            mark: "realme",
+            model: "6 pro"
+        }, {
+            name: "laptop",
+            mark: "acer",
+            model: "5 nitro",
+        }
     ]
 };
 // console.log(Object.values(person));
@@ -169,11 +169,6 @@ fetch('https://imdb-api.com/en/API/Top250Movies/k_q0cb7kv2')
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
-//request promis with a return to the console.
-fetch('https://imdb-api.com/en/API/Top250Movies/k_q0cb7kv2')
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
 
 
 
